@@ -4,21 +4,20 @@ import UserItem from './UserItem';
 import Card from '../../shared/components/UIElements/Card';
 import './UsersList.css';
 
-const UserList = (props) => {
+const UsersList = props => {
   if (props.items.length === 0) {
-    // if theres no users in database
     return (
-      <div className='center'>
+      <div className="center">
         <Card>
-          <h2>No users found. Yet!</h2>
+          <h2>No users found.</h2>
         </Card>
       </div>
     );
   }
-  // else return list of users
+
   return (
-    <ul className='users-list'>
-      {props.items.map((user) => (
+    <ul className="users-list">
+      {props.items.map(user => (
         <UserItem
           key={user.id}
           id={user.id}
@@ -31,4 +30,4 @@ const UserList = (props) => {
   );
 };
 
-export default UserList;
+export default UsersList;

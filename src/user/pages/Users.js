@@ -6,12 +6,13 @@ const Users = () => {
   const USERS = [
     {
       id: 'u1',
-      name: 'Kamil',
+      name: 'Max Schwarz',
       image:
-        'https://samochody-specjalne.pl/wp-content/uploads/2021/02/xp-tgx-eot-individual-lion-s-2_a-678x381.jpg.pagespeed.ic.jQ4OtdHFpg.jpg',
-      places: 3,
-    },
+        'https://images.pexels.com/photos/839011/pexels-photo-839011.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      places: 3
+    }
   ];
+
   return <UsersList items={USERS} />;
 };
 
