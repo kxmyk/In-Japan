@@ -1,6 +1,7 @@
 import React from 'react';
 
 import UserItem from './UserItem';
+import Card from '../../shared/components/UIElements/Card';
 import './UsersList.css';
 
 const UserList = (props) => {
@@ -8,7 +9,9 @@ const UserList = (props) => {
     // if theres no users in database
     return (
       <div className='center'>
-        <h2>No users found. Yet!</h2>
+        <Card>
+          <h2>No users found. Yet!</h2>
+        </Card>
       </div>
     );
   }
